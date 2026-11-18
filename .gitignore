@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+.npm-cache/
+# Build output
+dist/
+
+# Local data & auth (WhatsApp session, SQLite history, logs)
+store/
+data/
+logs/
+
+# Groups - only track base structure and specific files
+groups/*
+!groups/main/
+!groups/global/
+!groups/whatsapp_main/
+groups/main/*
+groups/global/*
+groups/whatsapp_main/*
+!groups/main/CLAUDE.md
+!groups/global/CLAUDE.md
+!groups/whatsapp_main/CLAUDE.md
+!groups/whatsapp_main/linkedin_workflow.md
+!groups/whatsapp_main/linkedin_config.example.json
+
+# Secrets - never commit these
+*.keys.json
+.env
+linkedin_config.json
+linkedin_session.json
+*.token
+
+# Agent working files (drafts, screenshots)
+linkedin_draft.md
+linkedin_draft_date.txt
+*.png
+*.jpg
+!assets/*
+
+# Local Claude Code settings (may contain tokens)
+.claude/settings.local.json
+
+# Temp files
+.tmp-*
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Skills system (local per-installation state)
+.nanoclaw/
+
+agents-sdk-docs

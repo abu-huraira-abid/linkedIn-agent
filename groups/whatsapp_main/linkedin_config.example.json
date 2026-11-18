@@ -1,0 +1,5 @@
+{
+  "token": "YOUR_LINKEDIN_ACCESS_TOKEN",
+  "person_urn": "urn:li:person:YOUR_PERSON_ID",
+  "owner": "Your Name"
+}
